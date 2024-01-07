@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onomastiki App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body class="container">
+    <div class="navbar">
+        <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo" />
+        <ul class="listCover">
+            <li class="list"><a href="{{ url_for('home') }}" class="navbar-brand">Главная</a></li>
+            <li class="list"><a href="{{ url_for('about') }}" class="navbar-item">О нас</a></li>
+            <li class="list"><a href="{{ url_for('contact') }}" class="navbar-item">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div class="body-content">
+        <h2>Upload Your Files</h2>
+        <!-- <form action="/run_notebook" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".ipynb">
+            <input type="submit" value="Run Notebook">
+        </form> -->
+        <form action="/" method="post" enctype="multipart/form-data">
+            <h3>Upload .ipynb File</h3>
+            <input type="file" name="notebook" accept=".ipynb"><br><br>
+            <h3>Upload .csv Files</h3>
+            <input type="file" name="csv_file_1" accept=".csv"><br>
+            <input type="file" name="csv_file_2" accept=".csv"><br>
+            <input type="file" name="csv_file_3" accept=".csv"><br>
+            <!-- Add more input fields for additional csv files as needed -->
+            <br>
+            <input type="submit" value="Run Notebook with CSV Files">
+        </form>
+        <hr/>
+        <footer>
+            <p>&copy; 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
