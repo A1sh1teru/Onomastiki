@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+
+.root {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    background-color: #000000;
+    height: 72px;
+    max-width: auto;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    /* justify-content: baseline; */
+    align-items: center;
+    background-color: #000000;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    /* margin-left: 370px; */
+    height: 72px;
+    width: 1180px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    margin-left: 30px;
+}
+
+.listCover {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.body-content-about {
+    /* padding: 5px; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.body-container-about {
+    display: flex;
+    flex-direction: column;
+    width: 1180px;
+    background-color: #f0ede4;
+}
+
+.title-1 {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-left: 100px;
+}
+
+.p-1 {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 0px;
+    padding-left: 100px;
+    width: 800px;
+}
+
+.title-2 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 46px;
+    margin-top: 0px;
+    padding-left: 100px;
+}
+
+.p-2 {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 0px;
+    padding-left: 100px;
+    width: 800px;
+}
+
+.title-2 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 46px;
+    margin-top: 0px;
+    padding-left: 100px;
+}
+
+.title-3 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 46px;
+    margin-top: 0px;
+    padding-left: 100px;
+    margin-bottom: 46px;
+}
+
+.personContainer {
+    padding-left: 100px;
+}
+
+.person1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ava1 {
+    max-width: 400px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.ava-description-1 {
+    padding-right: 100px;
+    padding-left: 20px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    width: auto;
+    margin: 0;
+}
+
+.person2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.ava-description-2 {
+    padding-right: 100px;
+    padding-left: 20px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    width: auto;
+    margin: 0;
+}
+
+.person3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.ava-description-3 {
+    padding-right: 100px;
+    padding-left: 20px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    width: auto;
+    margin: 0;
+}
+
+.person4 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.ava-description-4 {
+    padding-right: 100px;
+    padding-left: 20px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    width: auto;
+    margin: 0;
+}

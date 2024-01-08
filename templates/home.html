@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onomastiki App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body class="root">
+    <div class="container">
+        <div class="navbar">
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo" />
+            <ul class="listCover">
+                <li class="list"><a href="{{ url_for('home') }}" class="navbar-brand">Главная</a></li>
+                <li class="list"><a href="{{ url_for('about') }}" class="navbar-item">О нас</a></li>
+                <li class="list"><a href="{{ url_for('contact') }}" class="navbar-item">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="body-content-home">
+        <div class="body-container-home">
+            <div class="btn-download-1">
+                <a class="btn-download-text-1" href="download/lingo.ipynb" download="Onomatiki App">Скачать .py файл</a>
+            </div>
+            <div class="btn-download-2">
+                <a class="btn-download-text-2" href="download/lingo.ipynb" download="Onomatiki App">Скачать архив с данными</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+</body>
+</html>
