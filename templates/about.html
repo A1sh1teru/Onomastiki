@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О нас</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
 </head>
+
 <body class="root">
-    <div class="container">
-        <div class="navbar">
-            <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo" />
+    <div class="navbar">
+        <div class="container">
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo"></в>
             <ul class="listCover">
-                <li class="list"><a href="{{ url_for('home') }}" class="navbar-brand">Главная</a></li>
-                <li class="list"><a href="{{ url_for('about') }}" class="navbar-item">О нас</a></li>
+                <li class="list"><a href="{{ url_for('home') }}" class="navbar-item">Главная</a></li>
+                <li class="list"><a href="{{ url_for('about') }}" class="navbar-brand">О нас</a></li>
                 <li class="list"><a href="{{ url_for('contact') }}" class="navbar-item">Контакты</a></li>
             </ul>
         </div>
@@ -21,30 +23,39 @@
     <div class="body-content-about">
         <div class="body-container-about">
             <p class="title-1">О нас</p>
-            <p class="p-1">Мы - команда обучающихся Института опережающих технологий "Школы Икс". 
-                Тема проекта над которым мы работали - "Смысловой образ коллектива на основе семантики имен и фамилий".</p>
+            <p class="p-1">Мы - команда обучающихся Института опережающих технологий "Школы Икс".
+                Тема проекта над которым мы работали - "Смысловой образ коллектива на основе семантики имен и фамилий".
+            </p>
             <p class="title-2">Описание проекта</p>
             <p class="p-2">Разработка системы, которая на основе определённого датасета
-                 создает название коллектива, учитывая семантическое значение каждого имени и фамилии.</p>
+                создает название коллектива, учитывая семантическое значение каждого имени и фамилии.</p>
             <p class="title-3">Наша команда</p>
             <div class="personContainer">
                 <div class="person1">
-                    <img class="ava1" src="{{ url_for('static', filename='img/ava1.jpg') }}">
-                    <p class="ava-description-1">Величко Игорь Владимирович <br><br>Занимался составлением датасетов, парсингом данных, созданием веб-интерфейса</p>
+                    <img class="ava1" src="{{ url_for('static', filename='img/igor.jpg') }}">
+                    <p class="ava-description-1"><strong>Величко Игорь Владимирович</strong> <br><br>Занимался
+                        составлением датасетов,
+                        парсингом данных, созданием веб-интерфейса</p>
                 </div>
                 <div class="person2">
-                    <img class="ava1" src="{{ url_for('static', filename='img/ava1.jpg') }}">
-                    <p class="ava-description-2">Титаренко Дмитрий Батькович <br><br>Занимался созданием датасетов, обработкой векторизированных данных, нахождением ближаейшего вектора</p>
+                    <img class="ava1" src="{{ url_for('static', filename='img/dima.jpg') }}">
+                    <p class="ava-description-2"><strong>Титаренко Дмитрий Сергеевич</strong> <br><br>Занимался
+                        созданием датасетов,
+                        обработкой векторизированных данных, нахождением ближаейшего вектора</p>
                 </div>
                 <div class="person3">
-                    <img class="ava1" src="{{ url_for('static', filename='img/ava1.jpg') }}">
-                    <p class="ava-description-3">Ли Михаил Батькович <br><br>Занимался обучением модели, предобработкой данных, декодированием найденных векторов</p>
+                    <img class="ava1" src="{{ url_for('static', filename='img/misha.jpg') }}">
+                    <p class="ava-description-3"><strong>Ли Михаил Игоревич</strong> <br><br>Занимался обучением
+                        модели, предобработкой
+                        данных, декодированием найденных векторов</p>
                 </div>
                 <div class="person3">
-                    <img class="ava1" src="{{ url_for('static', filename='img/ava1.jpg') }}">
-                    <p class="ava-description-4">Данилюк Денис Батькович <br><br>Занимался парсингом данных, созданием веб-интерфейса, составлением датасетов</p>
-                </div>  
-            </div> 
+                    <img class="ava1" src="{{ url_for('static', filename='img/denis.jpg') }}">
+                    <p class="ava-description-4"><strong>Данилюк Денис Юрьевич</strong> <br><br>Занимался парсингом
+                        данных, созданием
+                        веб-интерфейса, составлением датасетов</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -52,4 +63,5 @@
         <p>&copy; 2024</p>
     </footer>
 </body>
+
 </html>

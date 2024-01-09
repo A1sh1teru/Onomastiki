@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
 </head>
+
 <body class="root">
-    <div class="container">
-        <div class="navbar">
-            <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo" />
+    <div class="navbar">
+        <div class="container">
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo"></в>
             <ul class="listCover">
-                <li class="list"><a href="{{ url_for('home') }}" class="navbar-brand">Главная</a></li>
+                <li class="list"><a href="{{ url_for('home') }}" class="navbar-item">Главная</a></li>
                 <li class="list"><a href="{{ url_for('about') }}" class="navbar-item">О нас</a></li>
-                <li class="list"><a href="{{ url_for('contact') }}" class="navbar-item">Контакты</a></li>
+                <li class="list"><a href="{{ url_for('contact') }}" class="navbar-brand">Контакты</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="body-content-contact">
-        <div class="body-container-contact">
-            <p>random txt</p>
+    <section class="info">
+        <div class="container">
+            <h1 class="article">Контакты</h1>
+            <ul class="info-list">
+                <li class="item">Величко Игорь Владимирович - tg: <a href="https://t.me/luv_blue_blue_eyes">@luv_blue_blue_eyes</a></li>
+                <li class="item">Титаренко Дмитрий Сергеевич - tg: <a href="https://t.me/UnityRevi">@UnityRevi</a></li>
+                <li class="item">Ли Михаил Игоревич - tg: <a href="https://t.me/ossss_s">@ossss_s</a></li>
+                <li class="item">Данилюк Денис Юрьевич - tg: <a href="https://t.me/denxhf">@denxhf</a></li>
+            </ul>
         </div>
-    </div>
-    
+    </section>
+
     <footer>
         <p>&copy; 2024</p>
     </footer>
 </body>
+
 </html>

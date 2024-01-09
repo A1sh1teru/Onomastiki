@@ -1,109 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+ul,
+ol {
+	list-style-type: none;
+}
+
 .root {
-    margin: 0px;
+	margin: 0px;
+	padding: 0px;
+	font-family: Montserrat, sans-serif;
+	font-size: 18px;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    background-color: #000000;
-    height: 72px;
-    max-width: auto;
+	display: flex;
+	align-items: center;
+	width: 1320px;
+	margin: 0px auto;
+}
+
+.container a:hover {
+	transition-delay: 0.1s;
+	opacity: 0.7;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
+	display: block;
+	width: 50px;
+	height: 50px;
 }
 
 .navbar {
-    display: flex;
-    /* justify-content: baseline; */
-    align-items: center;
-    background-color: #000000;
-    font-size: 1em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-    /* margin-left: 370px; */
-    height: 72px;
-    width: 1180px;
+	display: flex;
+	align-items: center;
+	background-color: #000000;
+	color: white;
+	font-size: 21px;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 .navbar-brand {
-    font-size: 1.2em;
-    font-weight: 600;
+	font-weight: 700;
 }
 
 .navbar-item {
-    font-variant: small-caps;
-    margin-left: 30px;
+	margin-left: 30px;
 }
 
 .listCover {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .list {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 .body-content-home {
-    /* padding: 5px; */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    /* height: 600px; */
-}
-
-.body-container-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 1180px;
-    background-color: #f0ede4;
-    /* height: 1000px; */
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+	font-size: 30px;
 }
 
 .btn-download-1 {
-    display: flex;
-    justify-content: center;
-    background-color: #000000;
-    border-radius: 5px;
-    padding: 18px 25px;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 20px;
-    width: 250px;
+	display: flex;
+	justify-content: center;
+	background-color: #000000;
+	border-radius: 5px;
+	padding: 18px 25px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.btn-download-1 a:hover {
+	color:#2e8400;
+	transition-delay: 0.1s;
+	opacity: 0.7;
 }
 
 .btn-download-text-1 {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 .btn-download-2 {
-    display: flex;
-    justify-content: center;
-    background-color: #000000;
-    border-radius: 5px;
-    padding: 18px 25px;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    width: 250px;
+	display: flex;
+	justify-content: center;
+	background-color: #000000;
+	border-radius: 5px;
+	padding: 18px 25px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.btn-download-2 a:hover {
+	color:#2e8400;
+	transition-delay: 0.1s;
+	opacity: 0.7;
 }
 
 .btn-download-text-2 {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
+}
+
+footer p {
+	margin: 0;
+	font-size: 24px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
 }
